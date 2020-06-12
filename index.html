@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <title>recreate-google-project</title>
+</head>
+<body>
+<style>
+    #box-container {
+      height: 100px;
+      display: flex;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: strong;    
+    }
+    
+    a {
+    text-decoration: none;
+    color:black !important;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #box-1 {
+      background-color: white;
+      width: 50%;
+      height: 50px;
+      display: flex;
+      font-weight: bold;
+      font-size: 13px; 
+    }
+    .topleft {
+      width: 40px;
+      height: 20px;
+      margin-top: 15px; /*move div x (down) from top*/
+      margin-left: 13px; /*move div over to right*/
+      padding-left: 10px; /*move stuff inside div over to right*/ 
+      background-color: white;      
+    }
+    
+    .top2left {
+      width: 40px;
+      height: 20px;
+      margin-top: 15px; /*move div x (down) from top*/
+      margin-left: 0px; /*move div over to right*/
+      padding-left: 10px; /*move stuff inside div over to right*/ 
+      background-color: white; 
+    }
+  
+    #box-2 {
+      background-color: white;
+      width: 50%;
+      height: 50px;
+      display: flex;
+    }
+    
+    .gmail {
+      width: 40px;
+      height: 30px;
+      margin-top: 15px; /*move div x (down) from top*/
+      margin-left: 55%; /*move div over to right*/
+      padding-right: 0px; /*move stuff inside div over to right*/ 
+      background-color: white;   
+      font-weight: bold;
+      font-size: 13px;   
+    }
+
+    .topimages {
+      width: 50px;
+      height: 30px;
+      margin-top: 15px; /*move div x (down) from top*/
+      /*margin-left: 70%; /*move div over to right*/
+      padding-left: 10px;
+      padding-right: 0px; /*move stuff inside div over to right*/ 
+      background-color: white;
+      font-weight: bold;
+      font-size: 13px; 
+    }
+
+    .dots {
+      width: 30px;
+      height: 30px;
+      margin-top: 15px; /*move div x (down) from top*/
+      /*margin-left: 70%; /*move div over to right*/
+      padding-left: 10px;
+      padding-right: 10px; /*move stuff inside div over to right*/ 
+      background-color: white;     
+    }
+
+    .signinbutton {
+      width: 69.34px;
+      height: 30px;
+      margin-top: 10px; /*move div x (down) from top*/
+      /*margin-left: 70%; /*move div over to right*/
+      padding-left: 10px;
+      padding-right: 10px; /*move stuff inside div over to right*/ 
+      background-color: #4c8bf5;
+      color: white;
+      border: 0px;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .searchfield {
+      width: 500px;
+      height: 45px;
+      padding: 5 50 5 50;
+      border-radius: 30px;
+      border: 1px solid gray;
+      /*background: url(images/searchglass.png)*/
+    }
+
+    .btndiv {
+      padding-top: 20px;
+    }
+
+    .googlebutton {
+      height: 36px;
+      line-height: 27px;
+      text-align: center;
+      background-color: #f2f2f2;
+      border-radius: 3px;
+      color: #5F6368;
+      font-size: 14px;
+      margin: 11px 4px 11px 4px;
+      padding: 0px 16px;
+      border: 0px;
+    }
+    .footerbar {
+      position: absolute;
+      height: 40px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0px 0px 0px 0px;
+      color: black;
+      display: flex;
+      font-family: Roboto;
+      font-size: 13px;
+    }
+
+    .footerleft {
+      display: flex;
+      width: 50%;
+      height: 50px;
+      display: flex;
+      font-weight: bold;
+      font-size: 13px; 
+      background-color: #f2f2f2;
+    }
+
+    .footadvertising {
+      width: 80px;
+      height: 20px;
+      margin-top: 10px; /*move div x (down) from top*/
+      margin-left: 20px; /*move div over to right*/
+      padding-left: 10px; /*move stuff inside div over to right*/ 
+      background-color: #f2f2f2;
+    }
+
+    .footbusiness {
+      width: 80px;
+      height: 20px;
+      margin-top: 10px; /*move div x (down) from top*/
+      margin-left: 15px; /*move div over to right*/
+      padding-left: 0px; /*move stuff inside div over to right*/ 
+      background-color: #f2f2f2;
+    }
+
+    .howsearchworks {
+      width: 120px;
+      height: 20px;
+      margin-top: 10px; /*move div x (down) from top*/
+      margin-left: 7px; /*move div over to right*/
+      padding-left: 0px; /*move stuff inside div over to right*/ 
+      background-color: #f2f2f2;
+    }
+
+    .footerright {
+      background-color: #f2f2f2;
+      width: 50%;
+      height: 50px;
+      display: flex;
+      color:black;
+    }
+    
+    .privacy {
+      width: 75px;
+      height: 20px;
+      margin-top: 10px; /*move div x (down) from top*/
+      margin-left: 59%; /*move div over to right*/
+      padding-right: 1px; /*move stuff inside div over to right*/ 
+      background-color: #f2f2f2;   
+      font-weight: bold;
+      font-size: 13px;  
+      color: black; 
+    }
+
+    .terms {
+      width: 65px;
+      height: 20px;
+      margin-top: 10px; /*move div x (down) from top*/
+      margin-left: 0; /*move div over to right*/
+      padding-right: 1px; /*move stuff inside div over to right*/ 
+      background-color: #f2f2f2;   
+      font-weight: bold;
+      font-size: 13px;   
+    }
+
+    .settings {
+      width: 50px;
+      height: 20px;
+      margin-top: 10px; /*move div x (down) from top*/
+      margin-left: 0; /*move div over to right*/
+      padding-right: 1px; /*move stuff inside div over to right*/ 
+      background-color: #f2f2f2;   
+      font-weight: bold;
+      font-size: 13px;   
+    }
+    
+  </style>
+  <div id="box-container">
+    <div id="box-1"><div class="topleft"><a href="#About">About</a></div><div class="top2left"><a href="#Store">Store</a></div></div>
+    <div id="box-2">
+      <div class="gmail"><a href="#Gmail">Gmail</a></div>
+      <div class="topimages"><a href="#Images">Images</a></div>
+      <div class="dots"><img alt="googledots" height="20px" id="dotsmenu" src="images/9box.png"></div>
+      <button class="signinbutton">Sign in</button>
+    </div>
+  </div>
+  <div id="box-container2"><center>
+    <img alt="Google" height="92" id="alphabetlogo" src="images/googlelogo_color_272x92dp.png" style="padding-top:100px" width="272"></center>
+  </div>
+<div class="inputdiv">
+  <center><input type="text" width="800px" id="searchfield" class="searchfield"></center>
+</div>
+<div class="btndiv">
+  <center><button class="googlebutton" id="googlesearch">Google Search</button>
+  <button class="googlebutton" id="imfeelinglucky">I'm Feeling Lucky</button></center>
+</div>
+
+<div class="footerbar">
+  <div class="footerleft">
+  <div class="footadvertising"><a href="#Advertising">Advertising</a></div>
+  <div class="footbusiness"><a href="#Business">Business</a></div>
+  <div class="howsearchworks"><a href="#How Search works">How Search works</a></div>
+  </div>
+  <div class="footerright">
+    <div class="privacy"><a href="#Privacy">Privacy</a></div>
+    <div class="terms"><a href="#Terms">Terms</a></div>
+    <div class="settings"><a href="#Settings">Settings</a></div>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+<header>
+  <nav>
+    <div id="gb" class="gb_1f">
+        <div id="hptl">
+          <a href="#">About</a>
+          <a href="#">Store</a>
+        </div>
+    
+    <div id="hptl-r" float="right" text-align="right"><a href="#">Gmail</a></div>
+    </div>
+    </div>
+      
+  </nav>
+</header>
+
+<div class="content" id="main">
+  <span class="ctr-p" id="body">
+    <center>
+      <div id="lga">
+        <img alt="Google" height="92" id="hplogo" src="images/googlelogo_color_272x92dp.png" style="padding-top:109px" width="272">
+      </div>
+      <div style="height:118px"></div>
+        <div style="margin-top:12px"></div>
+    </center>
+    </span>
+  </main>
+
+<footer>footer</footer>
+</body>
+</html>
+-->
